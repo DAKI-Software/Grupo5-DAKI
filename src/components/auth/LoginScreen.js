@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import '../../styles/login.css';
 
 export const LoginScreen = () => {
         return (
+            
             <div className="container login-container">
-                <div className="row">
+                <div className="row i">
+                    <div className="foto"></div>
+                </div>
+                <div className="row d">
                     <div className="col-md-6 login-form-1">
                         <h3>Bienvenido</h3>
                         <form>
@@ -24,7 +29,6 @@ export const LoginScreen = () => {
                                     placeholder="Ingresa tu contraseña:"
                                 />
                                 
-                                <p><a href='./forgotpassword'><>¿Olvidaste la contraseña?</></a></p>
                             </div>
                             <div className="form-group">
                                 <input 

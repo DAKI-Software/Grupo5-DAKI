@@ -9,12 +9,14 @@ import Temporizador from "../../layouts/DefaultInternal/Temporizador";
 // Layout
 import InternalLayout from "../../layouts/DefaultInternal";
 
+import ReactAudioPlayer from "react-audio-player";
+
 function Room() {
   return (
     <InternalLayout>
       <Grid container spacing={3}>
         {/* Chart */}
-        <Grid item xs={12} md={8} lg={9}>
+        <Grid item xs={12} md={6} lg={6}>
           <Paper
             sx={{
               p: 2,
@@ -28,7 +30,7 @@ function Room() {
           </Paper>
         </Grid>
         {/* Recent Deposits */}
-        <Grid item xs={12} md={4} lg={3}>
+        <Grid item xs={12} md={6} lg={6}>
           <Paper
             sx={{
               p: 2,
@@ -38,7 +40,7 @@ function Room() {
             }}
           >
             Herramientas
-            <h1>holi</h1>
+            <ReactAudioPlayer src="Canon.mp3" autoPlay controls />
           </Paper>
         </Grid>
         {/* Recent Orders */}

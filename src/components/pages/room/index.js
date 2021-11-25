@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
 import AppTasks from "../../layouts/DefaultInternal/ToDo";
-
+import Temporizador from "../../layouts/DefaultInternal/Temporizador";
 // Layout
 import InternalLayout from "../../layouts/DefaultInternal";
 
@@ -38,12 +38,14 @@ function Room() {
             }}
           >
             Herramientas
+            <h1>holi</h1>
           </Paper>
         </Grid>
         {/* Recent Orders */}
         <Grid item xs={12}>
           <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
             Pomodoro
+            <Temporizador />
           </Paper>
         </Grid>
       </Grid>

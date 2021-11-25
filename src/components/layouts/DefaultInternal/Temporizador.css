@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  background: #e5e5e5;
+}
+
+.title {
+  padding-left: 30px;
+}
+
+.timer {
+  text-align: center;
+  color: rgba(85, 70, 70, 0.397);
+  text-shadow: 3px 1px #290025;
+  font-size: 50px;
+  font-family: monospace;
+}

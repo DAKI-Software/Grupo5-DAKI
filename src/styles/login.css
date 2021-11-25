@@ -1,0 +1,33 @@
+.root{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4.2rem;
+    margin-bottom: 4.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.container .row{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.container .row.d{
+    background:  #290025;
+    color: white;
+}
+
+.container .row.i{
+    background-size: cover;
+    background-image: url('../img/foto-login.jpg');
+    background-position: 100% 30%;
+}

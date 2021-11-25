@@ -1,9 +1,33 @@
-import React from 'react'
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
+// Pages
+import SignIn from "../components/auth/SignIn";
+import { DakiScreen } from "../components/daki/DakiScreen";
+import DefaultInternal from '../components/layouts/DefaultInternal';
+import RoomPage from '../components/pages/room';
+import TaskPage from '../components/pages/task';
+import ProfilePage from '../components/pages/profile';
+import SignUp from "../components/auth/SingUp";
 
 export const AppRouter = () => {
-    return (
-        <div>
-            <h1>AppRouter!</h1>
-        </div>
-    )
-}
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/login" component={SignIn} />
+        <Route exact path="/login/Registro" component={SignUp} />
+        <Route exact path="/" component={DakiScreen} />
+        <Route exact path="/intranet" component={DefaultInternal} />
+        <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/rooms" component={RoomPage} />
+        <Route exact path="/tasks" component={TaskPage} />
+        <Redirect to="/" />
+      </Switch>
+    </Router>
+  );
+};

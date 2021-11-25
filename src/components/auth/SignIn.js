@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-
+import { Link as RouterLink} from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -20,6 +19,7 @@ import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+
 // Assets
 import loginBackgroundImg from "../../assets/img/login.jpg";
 
@@ -33,12 +33,12 @@ function Copyright(props) {
       {...props}
     >
       {"¿Todavía no tienes una cuenta?"}{" "}
-      <Link
-        to="/signup"
+      <RouterLink
+        to="/Login/Registro" 
         style={{ color: "#FFFFFF", fontSize: "20px", textDecoration: "none"}}
       >
         Crea una ahora
-      </Link>
+      </RouterLink>
       {` `}
     </Typography>
   );
@@ -218,7 +218,7 @@ export default function SignInSide() {
               </FormControl>
               <Grid container alignItems="end">
                 <Grid item xs>
-                  <Link
+                  <RouterLink
                     to="/recovery"
                     style={{
                       color: "#FFFFFF",
@@ -227,7 +227,7 @@ export default function SignInSide() {
                     }}
                   >
                     ¿Has olvidado tu contraseña?
-                  </Link>
+                  </RouterLink>
                 </Grid>
               </Grid>
               <Button

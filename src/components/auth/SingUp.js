@@ -6,7 +6,7 @@ import TextField from '@mui/material/TextField';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import PersonIcon from '@mui/icons-material/Person';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -50,7 +50,7 @@ export default function SignUp() {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+            <PersonIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
             Registro
@@ -64,7 +64,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="firstName"
-                  label="First Name"
+                  label="Nombre"
                   autoFocus
                 />
               </Grid>
@@ -73,7 +73,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="lastName"
-                  label="Last Name"
+                  label="Apellido"
                   name="lastName"
                   autoComplete="family-name"
                 />
@@ -83,7 +83,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Email"
                   name="email"
                   autoComplete="email"
                 />
@@ -93,7 +93,7 @@ export default function SignUp() {
                   required
                   fullWidth
                   name="password"
-                  label="Password"
+                  label="Contraseña"
                   type="password"
                   id="password"
                   autoComplete="new-password"

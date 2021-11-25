@@ -35,7 +35,7 @@ function Copyright(props) {
       {"¿Todavía no tienes una cuenta?"}{" "}
       <Link
         to="/signup"
-        style={{ color: "#FFFFFF", fontSize: "20px", textDecoration: "none", marginBottom:"5px"}}
+        style={{ color: "#FFFFFF", fontSize: "20px", textDecoration: "none"}}
       >
         Crea una ahora
       </Link>
@@ -126,7 +126,7 @@ export default function SignInSide() {
             backgroundPosition: "center",
           }}
         />
-
+        {/* <img src={loginBackgroundImg} target='loginBackgroundImg' />> */}
         <Grid
           item
           xs={12}

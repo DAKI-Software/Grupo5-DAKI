@@ -35,7 +35,7 @@ function Copyright(props) {
       {"¿Todavía no tienes una cuenta?"}{" "}
       <Link
         to="/signup"
-        style={{ color: "#FFFFFF", fontSize: "20px", textDecoration: "none" }}
+        style={{ color: "#FFFFFF", fontSize: "20px", textDecoration: "none", marginBottom:"5px"}}
       >
         Crea una ahora
       </Link>
@@ -126,7 +126,7 @@ export default function SignInSide() {
             backgroundPosition: "center",
           }}
         />
-        {/* <img src={loginBackgroundImg} target='loginBackgroundImg' />> */}
+
         <Grid
           item
           xs={12}
@@ -176,7 +176,7 @@ export default function SignInSide() {
                     backgroundColor: "#c29abe",
                   },
                 }}
-                style={{ marginTop: "24px" }}
+                style={{ marginTop: "15px" }}
               />
               <FormControl
                 sx={{ marginTop: "16px", width: "100%" }}
@@ -254,16 +254,7 @@ export default function SignInSide() {
                 justifyContent="center"
                 alignItems="center"
               >
-                {/* <Grid item xs>
-                  <Button
-                    type="submit"
-                    size="small"
-                    variant="contained"
-                    sx={{ mt: 3, mb: 2 }}
-                  >
-                    Facebook
-                  </Button>
-                </Grid> */}
+
                 <Grid item xs>
                   <Button
                     type="submit"
@@ -272,6 +263,14 @@ export default function SignInSide() {
                     sx={{ mt: 3, mb: 2 }}
                   >
                     Google
+                  </Button>
+                  <Button
+                    type="submit"
+                    size="small"
+                    variant="contained"
+                    sx={{ mt: 3, mb: 2 }}
+                  >
+                    Facebook
                   </Button>
                 </Grid>
               </Grid>

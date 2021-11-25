@@ -4,6 +4,8 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
+import AppTasks from "../../layouts/DefaultInternal/ToDo";
+
 // Layout
 import InternalLayout from "../../layouts/DefaultInternal";
 
@@ -18,10 +20,11 @@ function Room() {
               p: 2,
               display: "flex",
               flexDirection: "column",
-              height: 240,
+              height: 300,
             }}
           >
-            Sala 1
+            To-Do
+            <AppTasks />
           </Paper>
         </Grid>
         {/* Recent Deposits */}
@@ -31,16 +34,16 @@ function Room() {
               p: 2,
               display: "flex",
               flexDirection: "column",
-              height: 240,
+              height: 300,
             }}
           >
-            Sala 2
+            Herramientas
           </Paper>
         </Grid>
         {/* Recent Orders */}
         <Grid item xs={12}>
           <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
-            Biblio
+            Pomodoro
           </Paper>
         </Grid>
       </Grid>
